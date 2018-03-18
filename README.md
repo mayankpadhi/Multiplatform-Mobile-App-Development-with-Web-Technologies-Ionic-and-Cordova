@@ -8,3 +8,6 @@ At the end of this project I was able to:
 *	Build mobile applications targeting multiple platforms with a single codebase
 *	Leverage my HTML5, CSS, Javascript and Angular skills
 *	Use various features of the Ionic framework to build hybrid mobile applications.
+
+In GNSSController.java,
+The case when number of position is less then 3 is not defined. However, ```position.size()- 3``` is computed which may return negative numbers. We can either attempt to fetch the data again or can restart the application. The last 3 measurements are not available means either it has started gathering data or some error has occurred in the data collection or error in instruments
